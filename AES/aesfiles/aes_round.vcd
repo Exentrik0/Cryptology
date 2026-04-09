@@ -1,0 +1,392 @@
+$date
+	Thu Apr  2 17:10:35 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_aes_round $end
+$var wire 128 ! tb_state_out [127:0] $end
+$var wire 128 " tb_sr_out [127:0] $end
+$var wire 128 # tb_sb_out [127:0] $end
+$var wire 1 $ tb_round_done $end
+$var wire 128 % tb_mc_out [127:0] $end
+$var reg 1 & clk $end
+$var reg 128 ' expected_out [127:0] $end
+$var reg 4 ( tb_round [3:0] $end
+$var reg 128 ) tb_round_key [127:0] $end
+$var reg 128 * tb_state_in [127:0] $end
+$scope module uut $end
+$var wire 1 & clk $end
+$var wire 4 + round [3:0] $end
+$var wire 128 , round_key [127:0] $end
+$var wire 128 - shiftrows_out [127:0] $end
+$var wire 128 . state_in [127:0] $end
+$var wire 128 / subbytes_out [127:0] $end
+$var wire 128 0 sr_out [127:0] $end
+$var wire 128 1 sb_out [127:0] $end
+$var wire 128 2 next_state [127:0] $end
+$var wire 128 3 mixcolumns_out [127:0] $end
+$var wire 128 4 mc_out [127:0] $end
+$var wire 128 5 ark_in [127:0] $end
+$var reg 1 6 done_reg $end
+$var reg 1 $ round_done $end
+$var reg 128 7 state_out [127:0] $end
+$scope module ARK $end
+$var wire 128 8 out [127:0] $end
+$var wire 128 9 round_key [127:0] $end
+$var wire 128 : state [127:0] $end
+$upscope $end
+$scope module MC $end
+$var wire 128 ; state_out [127:0] $end
+$var wire 128 < state_in [127:0] $end
+$var wire 32 = mix3 [31:0] $end
+$var wire 32 > mix2 [31:0] $end
+$var wire 32 ? mix1 [31:0] $end
+$var wire 32 @ mix0 [31:0] $end
+$var wire 32 A col3 [31:0] $end
+$var wire 32 B col2 [31:0] $end
+$var wire 32 C col1 [31:0] $end
+$var wire 32 D col0 [31:0] $end
+$scope function mix_col $end
+$var reg 32 E c [31:0] $end
+$var reg 8 F s0 [7:0] $end
+$var reg 8 G s1 [7:0] $end
+$var reg 8 H s2 [7:0] $end
+$var reg 8 I s3 [7:0] $end
+$upscope $end
+$scope function mul2 $end
+$var reg 8 J b [7:0] $end
+$upscope $end
+$scope function mul3 $end
+$var reg 8 K b [7:0] $end
+$upscope $end
+$scope function xtime $end
+$var reg 8 L b [7:0] $end
+$upscope $end
+$upscope $end
+$scope module SB $end
+$var wire 128 M state_in [127:0] $end
+$var wire 128 N state_out [127:0] $end
+$scope begin genblk1[0] $end
+$var parameter 2 O i $end
+$scope module s $end
+$var wire 8 P in [7:0] $end
+$var reg 8 Q out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[1] $end
+$var parameter 2 R i $end
+$scope module s $end
+$var wire 8 S in [7:0] $end
+$var reg 8 T out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[2] $end
+$var parameter 3 U i $end
+$scope module s $end
+$var wire 8 V in [7:0] $end
+$var reg 8 W out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[3] $end
+$var parameter 3 X i $end
+$scope module s $end
+$var wire 8 Y in [7:0] $end
+$var reg 8 Z out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[4] $end
+$var parameter 4 [ i $end
+$scope module s $end
+$var wire 8 \ in [7:0] $end
+$var reg 8 ] out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[5] $end
+$var parameter 4 ^ i $end
+$scope module s $end
+$var wire 8 _ in [7:0] $end
+$var reg 8 ` out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[6] $end
+$var parameter 4 a i $end
+$scope module s $end
+$var wire 8 b in [7:0] $end
+$var reg 8 c out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[7] $end
+$var parameter 4 d i $end
+$scope module s $end
+$var wire 8 e in [7:0] $end
+$var reg 8 f out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[8] $end
+$var parameter 5 g i $end
+$scope module s $end
+$var wire 8 h in [7:0] $end
+$var reg 8 i out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[9] $end
+$var parameter 5 j i $end
+$scope module s $end
+$var wire 8 k in [7:0] $end
+$var reg 8 l out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[10] $end
+$var parameter 5 m i $end
+$scope module s $end
+$var wire 8 n in [7:0] $end
+$var reg 8 o out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[11] $end
+$var parameter 5 p i $end
+$scope module s $end
+$var wire 8 q in [7:0] $end
+$var reg 8 r out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[12] $end
+$var parameter 5 s i $end
+$scope module s $end
+$var wire 8 t in [7:0] $end
+$var reg 8 u out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[13] $end
+$var parameter 5 v i $end
+$scope module s $end
+$var wire 8 w in [7:0] $end
+$var reg 8 x out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[14] $end
+$var parameter 5 y i $end
+$scope module s $end
+$var wire 8 z in [7:0] $end
+$var reg 8 { out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[15] $end
+$var parameter 5 | i $end
+$scope module s $end
+$var wire 8 } in [7:0] $end
+$var reg 8 ~ out [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module SR $end
+$var wire 128 !" state_in [127:0] $end
+$var wire 128 "" state_out [127:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1111 |
+b1110 y
+b1101 v
+b1100 s
+b1011 p
+b1010 m
+b1001 j
+b1000 g
+b111 d
+b110 a
+b101 ^
+b100 [
+b11 X
+b10 U
+b1 R
+b0 O
+$end
+#0
+$dumpvars
+bx ""
+bx !"
+bx ~
+bx }
+bx {
+bx z
+bx x
+bx w
+bx u
+bx t
+bx r
+bx q
+bx o
+bx n
+bx l
+bx k
+bx i
+bx h
+bx f
+bx e
+bx c
+bx b
+bx `
+bx _
+bx ]
+bx \
+bx Z
+bx Y
+bx W
+bx V
+bx T
+bx S
+bx Q
+bx P
+bx N
+bx M
+bx L
+bx K
+bx J
+bx I
+bx H
+bx G
+bx F
+bx E
+bx D
+bx C
+bx B
+bx A
+bx @
+bx ?
+bx >
+bx =
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+x6
+bx 5
+bx 4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+bx *
+bx )
+bx (
+bx '
+0&
+bx %
+x$
+bx #
+bx "
+bx !
+$end
+#5000
+16
+1&
+#10000
+0&
+#15000
+06
+1$
+b10100100100111000111111111110010011010001001111100110101001010110110101101011011111010100100001100000010011010100101000001001001 2
+b10100100100111000111111111110010011010001001111100110101001010110110101101011011111010100100001100000010011010100101000001001001 8
+b100011001101000000111100101111000001100101100011001100110100100100011111000110100110111101000101000000001100010011001001100 5
+b100011001101000000111100101111000001100101100011001100110100100100011111000110100110111101000101000000001100010011001001100 :
+b100011001101000000111100101111000001100101100011001100110100100100011111000110100110111101000101000000001100010011001001100 %
+b100011001101000000111100101111000001100101100011001100110100100100011111000110100110111101000101000000001100010011001001100 3
+b100011001101000000111100101111000001100101100011001100110100100100011111000110100110111101000101000000001100010011001001100 4
+b100011001101000000111100101111000001100101100011001100110100100100011111000110100110111101000101000000001100010011001001100 ;
+b11100000110010110001100110011010 ?
+b1001000111110001101001101111010 >
+b101000000001100010011001001100 =
+b100011001101000000111100101 @
+b11100000 K
+b10101110 L
+b10101110 J
+b10101110 I
+b1010010 H
+b10110100 G
+b11100000 F
+b11100000101101000101001010101110 E
+b11100000101101000101001010101110 C
+b10111000010000010001000111110001 B
+b11110001001111001100011100101 A
+b11010100101111110101110100110000 D
+b11010100101111110101110100110000111000001011010001010010101011101011100001000001000100011111000100011110001001111001100011100101 "
+b11010100101111110101110100110000111000001011010001010010101011101011100001000001000100011111000100011110001001111001100011100101 -
+b11010100101111110101110100110000111000001011010001010010101011101011100001000001000100011111000100011110001001111001100011100101 0
+b11010100101111110101110100110000111000001011010001010010101011101011100001000001000100011111000100011110001001111001100011100101 <
+b11010100101111110101110100110000111000001011010001010010101011101011100001000001000100011111000100011110001001111001100011100101 ""
+b110000 Q
+b1010010 T
+b1000001 W
+b11110 Z
+b11100101 ]
+b1011101 `
+b10110100 c
+b10111000 f
+b11110001 i
+b10011000 l
+b10111111 o
+b11100000 r
+b10101110 u
+b10001 x
+b100111 {
+b11010100001001110001000110101110111000001011111110011000111100011011100010110100010111011110010100011110010000010101001000110000 #
+b11010100001001110001000110101110111000001011111110011000111100011011100010110100010111011110010100011110010000010101001000110000 /
+b11010100001001110001000110101110111000001011111110011000111100011011100010110100010111011110010100011110010000010101001000110000 1
+b11010100001001110001000110101110111000001011111110011000111100011011100010110100010111011110010100011110010000010101001000110000 N
+b11010100001001110001000110101110111000001011111110011000111100011011100010110100010111011110010100011110010000010101001000110000 !"
+b11010100 ~
+b1000 P
+b1001000 S
+b11111000 V
+b11101001 Y
+b101010 \
+b10001101 _
+b11000110 b
+b10011010 e
+b101011 h
+b11100010 k
+b11110100 n
+b10100000 q
+b10111110 t
+b11100011 w
+b111101 z
+b11001 }
+b10100100100111000111111111110010011010001001111100110101001010110110101101011011111010100100001100000010011010100101000001001001 '
+b10100000111110101111111000010111100010000101010000101100101100010010001110100011001110010011100100101010011011000111011000000101 )
+b10100000111110101111111000010111100010000101010000101100101100010010001110100011001110010011100100101010011011000111011000000101 ,
+b10100000111110101111111000010111100010000101010000101100101100010010001110100011001110010011100100101010011011000111011000000101 9
+b11001001111011110001110111110101000001111010011100010001010111001101011000110100011010010101011101001111110000100100000001000 *
+b11001001111011110001110111110101000001111010011100010001010111001101011000110100011010010101011101001111110000100100000001000 .
+b11001001111011110001110111110101000001111010011100010001010111001101011000110100011010010101011101001111110000100100000001000 M
+b1 (
+b1 +
+1&
+#20000
+0&
+#25000
+16
+b10100100100111000111111111110010011010001001111100110101001010110110101101011011111010100100001100000010011010100101000001001001 !
+b10100100100111000111111111110010011010001001111100110101001010110110101101011011111010100100001100000010011010100101000001001001 7
+0$
+1&
+#30000
+0&
+#35000
+06
+1$
+1&
